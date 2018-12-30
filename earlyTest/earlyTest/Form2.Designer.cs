@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.teacherBTN = new System.Windows.Forms.Button();
+            this.highscoreBTN = new System.Windows.Forms.Button();
+            this.quitBTN = new System.Windows.Forms.Button();
+            this.startGameBTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,52 +47,62 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // teacherBTN
             // 
-            this.button1.Location = new System.Drawing.Point(373, 397);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.teacherBTN.Font = new System.Drawing.Font("MS Reference Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherBTN.Location = new System.Drawing.Point(218, 342);
+            this.teacherBTN.Name = "teacherBTN";
+            this.teacherBTN.Size = new System.Drawing.Size(403, 62);
+            this.teacherBTN.TabIndex = 1;
+            this.teacherBTN.Text = "Questions";
+            this.teacherBTN.UseVisualStyleBackColor = true;
+            this.teacherBTN.Visible = false;
+            this.teacherBTN.Click += new System.EventHandler(this.teacherBTN_Click);
             // 
-            // button2
+            // highscoreBTN
             // 
-            this.button2.Location = new System.Drawing.Point(373, 338);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.highscoreBTN.Font = new System.Drawing.Font("MS Reference Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.highscoreBTN.Location = new System.Drawing.Point(218, 274);
+            this.highscoreBTN.Name = "highscoreBTN";
+            this.highscoreBTN.Size = new System.Drawing.Size(403, 62);
+            this.highscoreBTN.TabIndex = 2;
+            this.highscoreBTN.Text = "Highscore";
+            this.highscoreBTN.UseVisualStyleBackColor = true;
+            this.highscoreBTN.Click += new System.EventHandler(this.highscoreBTN_Click);
             // 
-            // button3
+            // quitBTN
             // 
-            this.button3.Location = new System.Drawing.Point(373, 269);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.quitBTN.Font = new System.Drawing.Font("MS Reference Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quitBTN.Location = new System.Drawing.Point(218, 342);
+            this.quitBTN.Name = "quitBTN";
+            this.quitBTN.Size = new System.Drawing.Size(403, 62);
+            this.quitBTN.TabIndex = 3;
+            this.quitBTN.Text = "Exit";
+            this.quitBTN.UseVisualStyleBackColor = true;
+            this.quitBTN.Click += new System.EventHandler(this.quitBTN_Click);
             // 
-            // button4
+            // startGameBTN
             // 
-            this.button4.Location = new System.Drawing.Point(373, 206);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.startGameBTN.Font = new System.Drawing.Font("MS Reference Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startGameBTN.Location = new System.Drawing.Point(218, 206);
+            this.startGameBTN.Name = "startGameBTN";
+            this.startGameBTN.Size = new System.Drawing.Size(403, 62);
+            this.startGameBTN.TabIndex = 4;
+            this.startGameBTN.Text = "Start game";
+            this.startGameBTN.UseVisualStyleBackColor = true;
+            this.startGameBTN.Click += new System.EventHandler(this.startGameBTN_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::earlyTest.Properties.Resources.bgtest3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 556);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.startGameBTN);
+            this.Controls.Add(this.quitBTN);
+            this.Controls.Add(this.highscoreBTN);
+            this.Controls.Add(this.teacherBTN);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -105,9 +115,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button teacherBTN;
+        private System.Windows.Forms.Button highscoreBTN;
+        private System.Windows.Forms.Button quitBTN;
+        private System.Windows.Forms.Button startGameBTN;
     }
 }

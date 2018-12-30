@@ -189,7 +189,7 @@ namespace earlyTest
 
         private void openingMainMenu()
         {
-            Application.Run(new Form2(teacher));
+            Application.Run(new Form2(false));
             // this loads the menu 
         }
         public void login(string Username, string Password)
