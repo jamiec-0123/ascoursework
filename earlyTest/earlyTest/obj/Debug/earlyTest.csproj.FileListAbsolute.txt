@@ -9,4 +9,3 @@ C:\Users\lolca\source\repos\earlyTest\earlyTest\bin\Debug\earlyTest.pdb
 C:\Users\lolca\source\repos\earlyTest\earlyTest\obj\Debug\earlyTest.exe
 C:\Users\lolca\source\repos\earlyTest\earlyTest\obj\Debug\earlyTest.pdb
 C:\Users\lolca\source\repos\earlyTest\earlyTest\obj\Debug\earlyTest.Form2.resources
-C:\Users\lolca\source\repos\earlyTest\earlyTest\obj\Debug\earlyTest.Form3.resources

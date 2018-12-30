@@ -12,14 +12,15 @@ namespace earlyTest
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(bool teacher)
         {
+
             InitializeComponent();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+ 
         }
     }
 }
